@@ -11,9 +11,8 @@ All features of the original esx_vehicleshop are present:
 - Player Managment  
 - Vehicle Rent  
 Most features are tested but to make a deep testing of all feature I would need some testers.  
-
-** Location of Shop: Mosleys **
-** Known Bugs: **  
+__Location of Shop: Mosleys__ 
+__Known Bugs:__  
 - Sometimes, in player management, the player gets stuck in his job when quitting. In this case you need to relog and everything is fine.  
 Can't figure out at the moment what is causing this behaviour.  
 - When you restart the module the database is not loading. You need to restart it again and all is fine.  
@@ -22,9 +21,9 @@ Can't figure out at the moment what is causing this behaviour.
 If you find bugs, please report them and I will do my best to fix them.  
 If you can fix the bugs yourself, please make a pull request and share it with us.  
   
-** Planned Features: none **  
+__Planned Features: none__  
   
-** Included Languages: English & German **  
+__Included Languages: English & German__  
 If you want your own language in the module use the translations from the original esx_vehicleshop and adapt the lines which I have changed.  
 After that you have your own language present. ( Should only take 2 minutes to adapt the lang file. )  
   
