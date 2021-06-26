@@ -2,6 +2,8 @@ I made this for my server and want to share it with you all.
 
 Have Fun!
 
+__(PREVIEW)[https://youtu.be/8Uli-UT4YQo]__
+
 # esx_truckshop
 
 ESX Truck Shop adds an truck shop to the game, where employeed players can sell trucks to other players. You can also disable the job part so any player can buy trucks with a menu based interaction.  
