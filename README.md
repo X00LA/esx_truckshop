@@ -2,7 +2,7 @@ I made this for my server and want to share it with you all.
 
 Have Fun!
 
-__(PREVIEW)[https://youtu.be/8Uli-UT4YQo]__
+__[PREVIEW](https://youtu.be/8Uli-UT4YQo)__
 
 # esx_truckshop
 
