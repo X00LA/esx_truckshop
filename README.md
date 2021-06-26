@@ -11,7 +11,9 @@ All features of the original esx_vehicleshop are present:
 - Player Managment  
 - Vehicle Rent  
 Most features are tested but to make a deep testing of all feature I would need some testers.  
+
 __Location of Shop: Mosleys__ 
+
 __Known Bugs:__  
 - Sometimes, in player management, the player gets stuck in his job when quitting. In this case you need to relog and everything is fine.  
 Can't figure out at the moment what is causing this behaviour.  
