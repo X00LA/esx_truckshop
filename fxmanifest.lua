@@ -4,7 +4,7 @@ game 'gta5'
 
 description 'ESX Truck Shop'
 
-version '1.1.0'
+version '1.0.0'
 
 server_scripts {
 	'@async/async.lua',
