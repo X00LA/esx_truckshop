@@ -77,7 +77,7 @@ INSERT INTO `truck_categories`(name, label) VALUES
 	('military', 'MilitaryTrucks'),
 	('work', 'WorkTrucks'),
 	('special', 'SpecialTrucks'),
-	('bus', 'Busses'),
+	('busses', 'Busses'),
 	('utility', 'Utility'),
 	('job', 'Job'),
 	('offroad', 'Off Road')

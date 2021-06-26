@@ -1,8 +1,35 @@
-## Don't use! Currently not working! Any help is appreciated.
+I made this for my server and want to share it with you all.
+
+Have Fun!
 
 # esx_truckshop
 
-ESX Truck Shop adds an truck shop to the game, where employeed players can sell trucks to other players. You can also disable the job part so any player can buy trucks with a menu based interaction.
+ESX Truck Shop adds an truck shop to the game, where employeed players can sell trucks to other players. You can also disable the job part so any player can buy trucks with a menu based interaction.  
+  
+All features of the original esx_vehicleshop are present:  
+- Buying/Selling Vehicles  
+- Player Managment  
+- Vehicle Rent  
+Most features are tested but to make a deep testing of all feature I would need some testers.  
+
+** Location of Shop: Mosleys **
+** Known Bugs: **  
+- Sometimes, in player management, the player gets stuck in his job when quitting. In this case you need to relog and everything is fine.  
+Can't figure out at the moment what is causing this behaviour.  
+- When you restart the module the database is not loading. You need to restart it again and all is fine.  
+
+  
+If you find bugs, please report them and I will do my best to fix them.  
+If you can fix the bugs yourself, please make a pull request and share it with us.  
+  
+** Planned Features: none **  
+  
+** Included Languages: English & German **  
+If you want your own language in the module use the translations from the original esx_vehicleshop and adapt the lines which I have changed.  
+After that you have your own language present. ( Should only take 2 minutes to adapt the lang file. )  
+  
+I have planned to do also a motorcycle and airplane shop as well as the fitting dmv schools for airplanes and boats and several more.  
+So stay informed about my github!
 
 ## Requirements
 

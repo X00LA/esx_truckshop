@@ -37,7 +37,6 @@ function SQLVehiclesAndCategories()
 
 			GetVehiclesAndCategories(categories, vehicles)
 		end)
-
 	end)
 end
 

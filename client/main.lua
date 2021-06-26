@@ -329,20 +329,20 @@ function OpenResellerMenu()
 		title    = _U('truck_dealer'),
 		align    = 'top-left',
 		elements = {
-			{label = _U('buy_vehicle'),                    value = 'buy_vehicle'},
-			{label = _U('pop_vehicle'),                    value = 'pop_vehicle'},
-			{label = _U('depop_vehicle'),                  value = 'depop_vehicle'},
+			{label = _U('buy_truck'),                    value = 'buy_vehicle'},
+			{label = _U('pop_truck'),                    value = 'pop_vehicle'},
+			{label = _U('depop_truck'),                  value = 'depop_vehicle'},
 			{label = _U('return_provider'),                value = 'return_provider'},
 			{label = _U('create_bill'),                    value = 'create_bill'},
-			{label = _U('get_rented_vehicles'),            value = 'get_rented_vehicles'},
-			{label = _U('set_vehicle_owner_sell'),         value = 'set_vehicle_owner_sell'},
-			{label = _U('set_vehicle_owner_rent'),         value = 'set_vehicle_owner_rent'},
+			{label = _U('get_rented_trucks'),            value = 'get_rented_vehicles'},
+			{label = _U('set_truck_owner_sell'),         value = 'set_vehicle_owner_sell'},
+			{label = _U('set_truck_owner_rent'),         value = 'set_vehicle_owner_rent'},
 			{label = _U('deposit_stock'),                  value = 'put_stock'},
 			{label = _U('take_stock'),                     value = 'get_stock'}
 	}}, function(data, menu)
 		local action = data.current.value
 
-		if action == 'buy_vehicle' then
+		if action == 'buy_truck' then
 			OpenShopMenu()
 		elseif action == 'put_stock' then
 			OpenPutStocksMenu()
@@ -354,7 +354,7 @@ function OpenResellerMenu()
 			if currentDisplayVehicle then
 				DeleteDisplayVehicleInsideShop()
 			else
-				ESX.ShowNotification(_U('no_current_vehicle'))
+				ESX.ShowNotification(_U('no_current_truck'))
 			end
 		elseif action == 'return_provider' then
 			ReturnVehicleProvider()
@@ -402,7 +402,7 @@ function OpenResellerMenu()
 					ESX.ShowNotification(_U('no_players'))
 				end
 			else
-				ESX.ShowNotification(_U('no_current_vehicle'))
+				ESX.ShowNotification(_U('no_current_truck'))
 			end
 		elseif action == 'set_vehicle_owner_rent' then
 			if currentDisplayVehicle then
@@ -437,7 +437,7 @@ function OpenResellerMenu()
 					ESX.ShowNotification(_U('no_players'))
 				end
 			else
-				ESX.ShowNotification(_U('no_current_vehicle'))
+				ESX.ShowNotification(_U('no_current_truck'))
 			end
 		end
 	end, function(data, menu)
@@ -463,7 +463,7 @@ function OpenPopVehicleMenu()
 		end
 
 		ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'commercial_vehicles', {
-			title    = _U('vehicle_dealer'),
+			title    = _U('truck_dealer'),
 			align    = 'top-left',
 			elements = elements
 		}, function(data, menu)
@@ -500,7 +500,7 @@ function OpenRentedVehiclesMenu()
 		end
 
 		ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'rented_vehicles', {
-			title    = _U('rent_vehicle'),
+			title    = _U('rent_truck'),
 			align    = 'top-left',
 			elements = elements
 		}, nil, function(data, menu)
@@ -757,9 +757,10 @@ end
 Citizen.CreateThread(function()
 	local blip = AddBlipForCoord(Config.Zones.ShopEntering.Pos)
 
-	SetBlipSprite (blip, 326)
+	SetBlipSprite (blip, 477)
 	SetBlipDisplay(blip, 4)
-	SetBlipScale  (blip, 1.0)
+	SetBlipScale  (blip, 0.7)
+	SetBlipColour (blip, 1)
 	SetBlipAsShortRange(blip, true)
 
 	BeginTextCommandSetBlipName('STRING')
@@ -781,7 +782,7 @@ Citizen.CreateThread(function()
 				letSleep = false
 
 				if v.Type ~= -1 then
-					DrawMarker(v.Type, v.Pos, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, v.Size.x, v.Size.y, v.Size.z, Config.MarkerColor.r, Config.MarkerColor.g, Config.MarkerColor.b, 100, false, true, 2, false, nil, nil, false)
+					DrawMarker(v.Type, v.Pos, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, v.Size.x, v.Size.y, v.Size.z, v.Color.r, v.Color.g, v.Color.b, 100, false, true, 2, false, nil, nil, false)
 				end
 
 				if distance < v.Size.x then
